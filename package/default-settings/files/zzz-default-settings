@@ -16,6 +16,7 @@ uci commit fstab
 
 ln -sf /sbin/ip /usr/bin/ip
 
+sed -i "s#22.03-SNAPSHOT#22.03.6#g" /etc/opkg/distfeeds.conf
 sed -i '/lienol/d' /etc/opkg/distfeeds.conf
 sed -i '/other/d' /etc/opkg/distfeeds.conf
 #sed -i 's/downloads.openwrt.org/openwrt.proxy.ustclug.org/g' /etc/opkg/distfeeds.conf
